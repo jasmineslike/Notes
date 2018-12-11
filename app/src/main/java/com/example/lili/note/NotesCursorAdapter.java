@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
+import com.amazonaws.mobileconnectors.s3.transferutility.*;
 
 public class NotesCursorAdapter extends CursorAdapter {
     public NotesCursorAdapter(Context context, Cursor c, int flags) {

@@ -6,6 +6,7 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import com.amazonaws.mobileconnectors.s3.transferutility.*;
 
 public class NotesProvider  extends ContentProvider {
 

@@ -1,5 +1,6 @@
 package com.example.lili.note;
 
+// notes
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -17,8 +18,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.amazonaws.mobile.auth.core.IdentityManager;
+import com.amazonaws.mobileconnectors.s3.transferutility.*;
+
 
 
 public class MainActivity extends AppCompatActivity
@@ -53,6 +59,7 @@ public class MainActivity extends AppCompatActivity
 
         android.support.v4.app.LoaderManager.getInstance(this).initLoader(0, null, this).forceLoad();
 
+
     }
 
     private void insertNote(String noteText) {
@@ -80,10 +87,17 @@ public class MainActivity extends AppCompatActivity
             case R.id.action_delete_all_notes:
                 deleteAllNotes();
                 break;
+            case R.id.menu_main_singOut:
+                signout();
+                break;
         }
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void signout() {
+        IdentityManager.getDefaultIdentityManager().signOut();
     }
 
     private void deleteAllNotes() {

@@ -3,6 +3,7 @@ package com.example.lili.note;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import com.amazonaws.mobileconnectors.s3.transferutility.*;
 
 public class OpenHelper extends SQLiteOpenHelper {
 
