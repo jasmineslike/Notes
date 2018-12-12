@@ -17,6 +17,7 @@ import com.amazonaws.mobile.client.AWSMobileClient;
 public class Menu extends Activity {
 
     private Button Note;
+    private Button Purchase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +35,11 @@ public class Menu extends Activity {
         });
 
         // Create log out Button on click listener
-        Note = (Button) findViewById(R.id.btnNote);
-        Note.setOnClickListener( new View.OnClickListener() {
+        Purchase = (Button) findViewById(R.id.btnPost);
+        Purchase.setOnClickListener( new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, MainActivity.class);
+                Intent intent = new Intent(Menu.this, ListActivity.class);
                 startActivity(intent);
             }
         });

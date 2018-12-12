@@ -12,4 +12,7 @@
     <string name="note">Note</string>
     <string name="post">Post</string>
     <string name="buyabook">BuyaBook</string>
+    <string name="delete_all_post">delete_all_posts</string>
+    <string name="sign_out">Sign Out</string>
+
 </resources>

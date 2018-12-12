@@ -17,7 +17,7 @@
     <item
         android:id="@+id/menu_main_singOut"
         android:orderInCategory="102"
-        android:title="Sign Out"
+        android:title="@string/sign_out"
         app:showAsAction="ifRoom|withText" />
 
 </menu>
